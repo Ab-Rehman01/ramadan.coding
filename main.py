@@ -16,14 +16,13 @@ def convert_units(value, unit_from, unit_to):
         return value * conversion
     else:
         return "Conversion not supported"
-    st.title("Unit Converter")
-    value = st.number_input(" enter a value:")
-    unit_from = st.selectbox("convert from:", ["meter", "kilometergram","Kilogram"])
+st.title("Unit Converter")
+value = st.number_input(" enter a value:")
+unit_from = st.selectbox("convert from:", ["meter", "kilometer","gram","Kilogram"])
 
-    unit_to =st.selectbox("Convert to:", ["meter","kiometer", "gram","kilogram"])
-
-    if st.button("Convert"):
-        result = convert_units(value,unit_from, unit_to)
-        st.write(f"Converted value: (result) ")
+unit_to =st.selectbox("Convert to:", ["meter","kiometer", "gram","kilogram"])
+if st.button("Convert"):
+    result = convert_units(value,unit_from, unit_to)
+    st.write(f"Converted value: {result} ")
 
 
