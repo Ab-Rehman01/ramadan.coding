@@ -26,5 +26,9 @@
     {
         "task": "hghghghj",
         "done": false
+    },
+    {
+        "task": "Complete Python project",
+        "done": false
     }
 ]

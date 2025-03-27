@@ -1,6 +1,6 @@
 import click
 import json
-import osl
+import os
 
 TODO_FILE = "todo.json"
 
